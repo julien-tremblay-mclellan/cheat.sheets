@@ -1,0 +1,25 @@
+# archivenow
+# A CLI Tool To Push Web Resources Into the major online  public Web Archives - https://github.com/oduwsdl/archivenow
+
+
+# Append date followed by all archive urls to ~/archivenow_urls_list.xml
+date >> ~archivenow_urls_list.xml && archivenow --wc --mg --is --ia http://cheat.sh >> ~/archivenow_urls_list.xml
+
+
+# Archive to Internet Archive, Archive.Is
+archivenow --is --ia http//:www.cheat.sh
+
+
+# Archive to Webcite, Meglodon, Archive.Is and Internet Archive
+archivenow --wc --mg --is --ia ttp//:www.cheat.sh
+
+
+# A rchive to all repos Perm.cc ( An API KEY is required by The Perma.cc Archive), WebCite,Archive.is, Archive.st,
+archivenow --all
+
+# Get warc file
+archive --warc http//:www.cheat.sh
+
+
+# Install archivenow
+pip install archivenow
